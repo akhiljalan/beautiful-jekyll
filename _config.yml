@@ -14,21 +14,22 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Akhil's website
+title: Akhil Jalan
 
 # Short description of your site
-description: For projects, blog posts, and more
+description: Akhil Jalan's homepage
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+  #Resources:
+  #   - Github: "https://github.com/akhiljalan"
+#    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+#    - Learn markdown: "http://www.markdowntutorial.com/"
+#    - GitHub Pages: "https://pages.github.com/"
+#  Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -65,6 +66,10 @@ footer-link-col: "#404040"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Akhil Jalan
+  email: "akhiljalan@berkeley.edu"
+  github: akhiljalan
+  linkedin: akhil-jalan-125b32103
+  
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
@@ -78,7 +83,7 @@ social-network-links:
   #twitter: daattali
 #  reddit: yourname
 #  google-plus: +DeanAttali
-#  linkedin: daattali
+  linkedin: akhil-jalan-125b32103
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -102,8 +107,8 @@ share-links-active:
 url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
-# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
+disqus: "akhiljalan"
 
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""
