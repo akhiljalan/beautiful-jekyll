@@ -40,5 +40,3 @@ Here's a picture of me holding some debate trophies and looking quite satisfied,
 Having learned a bit about world events, I came to Cal in 2015 intending to major in Economics or Political Science. But during first semester, I ended up enjoying the math class I took (an introduction to linear algebra and differential equations) so much that I decided to study math instead. 
 
 Besides the math-y stuff, I've made some great friends and memories in [Effective Altruists of Berkeley](https://www.facebook.com/effectivealtruismberkeley/), a student club about [effective altruism](https://www.effectivealtruism.org/). I've been President of EAB since January 2017. 
-
-
