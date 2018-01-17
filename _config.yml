@@ -26,6 +26,8 @@ navbar-links:
   About Me: "aboutme"
   Resources:
     - Medium: https://medium.com/@akhiljalan
+  Contact: "contact"
+  Resume: "files/Akhil_Jalan_Resume.pdf"
   #   - Github: "https://github.com/akhiljalan"
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
