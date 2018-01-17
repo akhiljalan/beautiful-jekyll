@@ -6,7 +6,7 @@ subtitle:
 
 Hi there! My name Akhil Jalan. 
 
-I'm a 3rd-year student at the University of California, Berkeley studying Applied Mathematics with a conentration in data science. I'm interested in data science because of its enormous potential for good. 
+I'm a 3rd-year student at the University of California, Berkeley studying Applied Mathematics with a conentration in data science. I love data science because it's a powerful way for me to use my knowledge of mathematics and statistics to effect change in the world. 
 
 <div style="text-align:center" markdown="1">
 
@@ -14,13 +14,22 @@ I'm a 3rd-year student at the University of California, Berkeley studying Applie
 
 </div>
 
+### Things I Like
+
+* Cooking 
+* Chess ([add me on LiChess](https://lichess.org/@/akhiljalan))
+* Photography
+* Podcasts, especially about politics and history 
+* Hiking
+* Music, especially Hip Hop and Electronic 
+
 ### Brief Story of My Life
 
-I grew up in Southern California, where I spent a lot of time playing YuGiOh and re-reading the Harry Potter books (I've read the series through at least 10 times. It's kind of scar). 
+I grew up in Southern California, where I spent a lot of time playing YuGiOh and re-reading the Harry Potter books (still a huge Potterhead). 
 
 From ages 12-18, I spent a lot time in competitive debate, which I consider a formative influence. Debate taught me to appreciate complexity, question everything, and speak articulately. 
 
-Here's a picture of me holding some debate trophies and attempting to smile, circa 2011. 
+Here's a picture of me holding some debate trophies and looking quite satisfied, taken in 2011. 
 
 <div style="text-align:center" markdown="1">
 
