@@ -6,11 +6,11 @@ subtitle:
 
 Hi there! My name Akhil Jalan. 
 
-I'm a 3rd-year student at the University of California, Berkeley studying Applied Mathematics with a conentration in machine learning. 
+I'm a 3rd-year student at the University of California, Berkeley studying Applied Mathematics with a conentration in data science. I'm interested in data science because of its enormous potential for good. 
 
 <div style="text-align:center" markdown="1">
 
-![Alt Text](img/misc-site-pictures/xmas-face.jpg)
+![Alt Text](img/misc-site-pictures/xmas-face.jpg){:height="50%" width="50%"}
 
 </div>
 
@@ -24,7 +24,7 @@ Here's a picture of me holding some debate trophies and attempting to smile, cir
 
 <div style="text-align:center" markdown="1">
 
-![Alt Text](img/misc-site-pictures/yung-akhil-trophies.jpg)
+![Alt Text](img/misc-site-pictures/yung-akhil-trophies.jpg){:height="50%" width="50%"}
 
 </div>
 
