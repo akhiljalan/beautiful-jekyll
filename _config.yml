@@ -26,7 +26,7 @@ navbar-links:
   About Me: "aboutme"
   Resources:
     - Medium: https://medium.com/@akhiljalan
-    - Classes: "classes"
+    - Classes @Cal: "classes"
   Contact: "contact"
   Resume: "files/Akhil_Jalan_Resume.pdf"
   #   - Github: "https://github.com/akhiljalan"

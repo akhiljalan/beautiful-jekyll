@@ -11,6 +11,8 @@ Some other resources
 * [The BerkeleyTime catalogue](http://www.berkeleytime.com/catalog/)
 * For EECS classes specifically, the EECS 101 Piazza class. If you're a CS or EECS major at Cal, you should have acess to this. 
 
+This page is a work in progress. 
+
 ## Mathematics
 
 * **Math 113 - Introduction to Abstract Algebra**
@@ -84,7 +86,6 @@ Some other resources
 	* Thoughts:
 	* Term: Spring 2017
 
-
 ## Computer Science 
 
 * **CS 189/289 - Introduction to Machine Learning**
@@ -115,7 +116,6 @@ Some other resources
 
 * **CS 194 - Deep Neural Networks**
 	* Term: Spring 2018 (Currently)
-
 
 ## Misc
 
