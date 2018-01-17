@@ -10,7 +10,7 @@ I'm a 3rd-year student at the University of California, Berkeley studying Applie
 
 <div style="text-align:center" markdown="1">
 
-![Alt Text](img/misc-site-pictures/xmas-face.jpg){:height="50%" width="50%"}
+![Alt Text](img/misc-site-pictures/xmas-face.jpg)
 
 </div>
 
