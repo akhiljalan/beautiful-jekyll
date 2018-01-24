@@ -1,8 +1,10 @@
 ---
 layout: post
 title: An Observation About the Simple Symmetric Random Walk
-tags: [statistics, python]
+tags: [statistics, python, work-in-progress]
 ---
+
+**Attention**: This is a work in progress. Currently trying to figure out why LaTeX won't render :(
 
 # An Observation About the Simple Symmetric Random Walk
 
