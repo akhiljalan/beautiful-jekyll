@@ -1,3 +1,9 @@
+---
+layout: post
+title: An Observation About the Simple Symmetric Random Walk
+tags: [statistics, python]
+---
+
 # An Observation About the Simple Symmetric Random Walk
 
 In this post, I'll empirically verify an interesting fact about the simple symmetric random walk. 
@@ -8,14 +14,12 @@ In this post, I'll empirically verify an interesting fact about the simple symme
 
 Suppose we have a sequence of independent, identically distributed random variables $X_1, X_2, ..., X_n, ...$ which are $1$ with probability $p$ and $-1$ with probability $1 - p$. That is, 
 
-$$
-\forall i [P(X_{i} = k)] = 
+$$\forall i [P(X_{i} = k)] = 
 \begin{cases}
 p & k = 1 \\
 1 - p & k = -1 \\
 0 & \text{otherwise}
-\end{cases}
-$$
+\end{cases}$$
 
 Then, let $S_{0} = 0$ and $$S_{n} = \sum\limits_{i = 1}^{n} X_{i}$$ 
 
