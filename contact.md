@@ -4,4 +4,10 @@ title: Contact Information
 subtitle: 
 ---
 
-You can email me at akhiljalan AT berkeley DOT edu. 
+**Email**: akhiljalan AT berkeley DOT edu
+
+**Github**: https://github.com/akhiljalan
+
+**LinkedIn**: https://www.linkedin.com/in/akhil-jalan
+
+**Medium**: https://medium.com/@akhiljalan
