@@ -6,7 +6,7 @@ subtitle:
 
 Hi there! My name Akhil Jalan. 
 
-I'm a 3rd-year student at the University of California, Berkeley studying Applied Mathematics with a conentration in data science. I love data science because it's a powerful way for me to use my knowledge of mathematics and statistics to effect change in the world. 
+I'm a 3rd-year student at the University of California, Berkeley studying Applied Mathematics with a conentration in data science. I hope to one day become a working data scientist, using my knowledge of mathematics and statistics to effect large-scale change in the world. 
 
 <div style="text-align:center" markdown="1">
 
@@ -37,6 +37,6 @@ Here's a picture of me holding some debate trophies and looking quite satisfied,
 
 </div>
 
-Having learned a bit about world events, I came to Cal in 2015 intending to major in Economics or Political Science. But during first semester, I ended up enjoying the math class I took (an introduction to linear algebra and differential equations) so much that I decided to study math instead. 
+Having learned a bit about world events, I came to Cal in 2015 intending to major in Economics or Political Science. But during first semester, I ended up enjoying the math class I took (an introduction to linear algebra and differential equations) so much that I decided to study applied math instead. From there, my curiosity led me into classes in programming, algorithms, statistics, and machine learning. Now, here I am. 
 
-Besides the math-y stuff, I've made some great friends and memories in [Effective Altruists of Berkeley](https://www.facebook.com/effectivealtruismberkeley/), a student club about [effective altruism](https://www.effectivealtruism.org/). I've been President of EAB since January 2017. 
+Besides learning a ton in my classes, I've made some great friends and memories in [Effective Altruists of Berkeley](https://www.facebook.com/effectivealtruismberkeley/), a student club about [effective altruism](https://www.effectivealtruism.org/). I've been President of EAB since January 2017. 
