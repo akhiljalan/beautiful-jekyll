@@ -98,6 +98,8 @@ plt.title('Empirical probability of successful walk', fontsize=20)
 plt.savefig('empirical_probability.png')
 ```
 
+![Empirical Win Probability](../img/random-walks/empirical_probability.png)
+
 ## Theoretical Verification 
 
 Now, let's find the theoretical answer: What is the probability of success where
@@ -163,3 +165,5 @@ plt.ylabel('Probability of reaching target', fontsize=20)
 plt.title('Theoretical probability of successful walk', fontsize=20)
 plt.savefig('theoretical_probability.png')
 ```
+
+![Empirical Win Probability](../img/random-walks/theoretical_probability.png)
