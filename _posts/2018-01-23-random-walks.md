@@ -4,13 +4,9 @@ title: An Observation About the Simple Symmetric Random Walk
 tags: [statistics, python, work-in-progress]
 ---
 
-# An Observation About the Simple Symmetric Random Walk
+# Gambler's Ruin and the Random Walk
 
-In this post, I'll empirically verify an interesting fact about the simple symmetric random walk. 
-
-$ x = 3 $
-
-$$y = 2$$
+Random walks are an essential stochastic process with applications from physics to financial modeling. In this post, I'll examine a simple example of the random walk - a special case of the game known as **gambler's ruin**. 
 
 ## Setup 
 
@@ -27,15 +23,21 @@ p & k = 1 \\
 
 Then, let $S_{0} = 0$ and $$S_{n} = \sum\limits_{i = 1}^{n} X_{i}$$ 
 
-The sequence of random variables $(S_{n})_{n = 1}^{\infty}$ is a **simple symmetric random walk**. 
+The sequence of random variables $(S_{n})_{n = 1}^{\infty}$ is a **simple symmetric random walk.**
 
-### Gambling Game
+### Gambler's Ruin 
 
-**Game**: Suppose a gambler is playing a game of chance. He starts with $\$x$ for some $0 < x < k$. At each round, he flips a biased coin with $P(\text{HEADS}) = p$. If the coin is heads, he gains $\$1$. If it is tails, he loses $\$1$. The game continues until he loses all his money, ending up with $\$0$, or attains $\$k$. The former outcome is a *loss* and the latter is a *win*.
+Next, let's define a special case of gambler's ruin. 
+
+**Game**: Suppose a gambler is playing a game of chance. He starts with $ \$x$ for some $0 < x < k$. At each round, he flips a biased coin with $P(\text{HEADS}) = p$. If the coin is heads, he gains $\$1$. If it is tails, he loses $\$1$. The game continues until he loses all his money, ending up with $\$0$, or attains $\$k$. The former outcome is a *loss* and the latter is a *win*.
 
 Suppose that we start at 1, and at each step we go to +1 with probability $p$ and -1 with probability $1 - p$. What is the probability that we get to $k$? 
 
-```python
+## Empirical Test
+
+To motivate the ultimate derivation, I'll first write some scripts to calculate this probability empirically.
+
+```
 import numpy as np 
 import matplotlib.pyplot as plt 
 %matplotlib inline 
@@ -77,7 +79,11 @@ def empirical_success_estimator(num_runs, start_val, upper_limit, lower_limit = 
         if success: 
             num_success += 1
     return num_success/num_runs
+```
 
+I'll plot the empirical probability of a "successful walk" for $p \in [0.1, 0.2, ..., 0.9]$ and $x \in \{0, 1, ..., 10\}$ where $k = 10$.
+
+```
 plt.figure(figsize=(12, 8))
 for p in np.arange(0.1, 1, step=0.1):
     p_success_vals = []
@@ -91,11 +97,20 @@ plt.ylabel('Probability of reaching target', fontsize=20)
 plt.title('Empirical probability of successful walk', fontsize=20)
 plt.savefig('empirical_probability.png')
 ```
-## Math 
 
-**Theorem**: $$f_{k}(x) = \frac{(\frac{1 - p}{p})^{x} - 1}{(\frac{1 - p}{p})^{k} - 1}$$
+## Theoretical Verification 
 
-Proof: We know that $f_{k}(k) = 1$ and $f_{k}(0) = 0$
+Now, let's find the theoretical answer: What is the probability of success where
+
+$$p = P(HEADS)$$ 
+$$x := \text{Starting Value}$$
+$$k := \text{Winning Value}$$
+
+**Theorem**: When the gambler starts with $ \$x$ with the stopping conditions of *loss* at $\$0$ and *win* at $\$k$, and the probability of HEADS is $p$, the probability of winning $f_{k}(x)$ is 
+
+$$f_{k}(x) = \frac{(\frac{1 - p}{p})^{x} - 1}{(\frac{1 - p}{p})^{k} - 1}$$
+
+**Proof**: We know that $f_{k}(k) = 1$ and $f_{k}(0) = 0$
 
 If $0 < x < k$, then after 1 step the gambler has $\$x + 1$ with probability $p$ and $\$x - 1$ with probability $1 - p$. Therefore, $f_{k}(x) = pf_{k}(x + 1) + (1 - p)f_{k}(x-1)$. To solve, we can solve the characteristic equation $y = py^2 + (1-p)$. 
 
@@ -117,9 +132,9 @@ $$
 
 Solving this system gives the desired result of $f_{k}(x) = \frac{(\frac{1 - p}{p})^{x} - 1}{(\frac{1 - p}{p})^{k} - 1}$. 
 
-Let's now graph these theoretical probabilities. 
+### Plotting Theoretical Probability
 
-```python
+```
 def fkx(start_val, upper_limit, p = 0.5):
     '''
     Theoretical probabilit of winning the gambling game,
@@ -148,4 +163,3 @@ plt.ylabel('Probability of reaching target', fontsize=20)
 plt.title('Theoretical probability of successful walk', fontsize=20)
 plt.savefig('theoretical_probability.png')
 ```
-
