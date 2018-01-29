@@ -4,11 +4,13 @@ title: An Observation About the Simple Symmetric Random Walk
 tags: [statistics, python, work-in-progress]
 ---
 
-**Attention**: This is a work in progress. Currently trying to figure out why LaTeX won't render :(
-
 # An Observation About the Simple Symmetric Random Walk
 
 In this post, I'll empirically verify an interesting fact about the simple symmetric random walk. 
+
+$ x = 3 $
+
+$$y = 2$$
 
 ## Setup 
 
