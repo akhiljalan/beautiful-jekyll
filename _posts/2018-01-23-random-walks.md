@@ -1,10 +1,9 @@
 ---
 layout: post
-title: An Observation About the Simple Symmetric Random Walk
+title: Gambler's Ruin and the Random Walk
 tags: [statistics, python, work-in-progress]
 ---
-
-# Gambler's Ruin and the Random Walk
+# Introduction 
 
 Random walks are an essential stochastic process with applications from physics to financial modeling. In this post, I'll examine a simple example of the random walk - a special case of the game known as **gambler's ruin**. 
 
@@ -29,7 +28,7 @@ The sequence of random variables $(S_{n})_{n = 1}^{\infty}$ is a **simple symmet
 
 Next, let's define a special case of gambler's ruin. 
 
-**Game**: Suppose a gambler is playing a game of chance. He starts with $ \$x$ for some $0 < x < k$. At each round, he flips a biased coin with $P(\text{HEADS}) = p$. If the coin is heads, he gains $\$1$. If it is tails, he loses $\$1$. The game continues until he loses all his money, ending up with $\$0$, or attains $\$k$. The former outcome is a *loss* and the latter is a *win*.
+**Game**: Suppose a gambler is playing a game of chance. He starts with $ $x$ for some $0 < x < k$. At each round, he flips a biased coin with $P(\text{HEADS}) = p$. If the coin is heads, he gains $ $1$. If it is tails, he loses $ $1$. The game continues until he loses all his money, ending up with $ $0$, or attains $ $k$. The former outcome is a *loss* and the latter is a *win*.
 
 Suppose that we start at 1, and at each step we go to +1 with probability $p$ and -1 with probability $1 - p$. What is the probability that we get to $k$? 
 
@@ -108,13 +107,13 @@ $$p = P(HEADS)$$
 $$x := \text{Starting Value}$$
 $$k := \text{Winning Value}$$
 
-**Theorem**: When the gambler starts with $ \$x$ with the stopping conditions of *loss* at $\$0$ and *win* at $\$k$, and the probability of HEADS is $p$, the probability of winning $f_{k}(x)$ is 
+**Theorem**: When the gambler starts with $ x$ with the stopping conditions of *loss* at $0$ and *win* at $k$, and the probability of HEADS is $p$, the probability of winning $f_{k}(x)$ is 
 
 $$f_{k}(x) = \frac{(\frac{1 - p}{p})^{x} - 1}{(\frac{1 - p}{p})^{k} - 1}$$
 
 **Proof**: We know that $f_{k}(k) = 1$ and $f_{k}(0) = 0$
 
-If $0 < x < k$, then after 1 step the gambler has $\$x + 1$ with probability $p$ and $\$x - 1$ with probability $1 - p$. Therefore, $f_{k}(x) = pf_{k}(x + 1) + (1 - p)f_{k}(x-1)$. To solve, we can solve the characteristic equation $y = py^2 + (1-p)$. 
+If $0 < x < k$, then after 1 step the gambler has $x + 1$ with probability $p$ and $x - 1$ with probability $1 - p$. Therefore, $f_{k}(x) = pf_{k}(x + 1) + (1 - p)f_{k}(x-1)$. To solve, we can solve the characteristic equation $y = py^2 + (1-p)$. 
 
 $$\begin{eqnarray} 
 y = py^2 + (1-p) \\ 
