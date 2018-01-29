@@ -36,7 +36,7 @@ Suppose that we start at 1, and at each step we go to +1 with probability $p$ an
 
 To motivate the ultimate derivation, I'll first write some scripts to calculate this probability empirically.
 
-```
+```python
 import numpy as np 
 import matplotlib.pyplot as plt 
 %matplotlib inline 
@@ -82,7 +82,7 @@ def empirical_success_estimator(num_runs, start_val, upper_limit, lower_limit = 
 
 I'll plot the empirical probability of a "successful walk" for $p \in [0.1, 0.2, ..., 0.9]$ and $x \in \{0, 1, ..., 10\}$ where $k = 10$.
 
-```
+```pythonf
 plt.figure(figsize=(12, 8))
 for p in np.arange(0.1, 1, step=0.1):
     p_success_vals = []
@@ -137,7 +137,7 @@ Solving this system gives the desired result of $f_{k}(x) = \frac{(\frac{1 - p}{
 
 ### Plotting Theoretical Probability
 
-```
+```python
 def fkx(start_val, upper_limit, p = 0.5):
     '''
     Theoretical probabilit of winning the gambling game,
