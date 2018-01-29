@@ -28,7 +28,7 @@ The sequence of random variables $(S_{n})_{n = 1}^{\infty}$ is a **simple symmet
 
 Next, let's define a special case of gambler's ruin. 
 
-**Game**: Suppose a gambler is playing a game of chance. He starts with $ $x$ for some $0 < x < k$. At each round, he flips a biased coin with $P(\text{HEADS}) = p$. If the coin is heads, he gains $ $1$. If it is tails, he loses $ $1$. The game continues until he loses all his money, ending up with $ $0$, or attains $ $k$. The former outcome is a *loss* and the latter is a *win*.
+**Game**: Suppose a gambler is playing a game of chance. He starts with $x$ for some $0 < x < k$. At each round, he flips a biased coin with $P(\text{HEADS}) = p$. If the coin is heads, he gains $1$. If it is tails, he loses $1$. The game continues until he loses all his money, ending up with $0$, or attains $k$. The former outcome is a *loss* and the latter is a *win*.
 
 Suppose that we start at 1, and at each step we go to +1 with probability $p$ and -1 with probability $1 - p$. What is the probability that we get to $k$? 
 
@@ -104,7 +104,9 @@ plt.savefig('empirical_probability.png')
 Now, let's find the theoretical answer: What is the probability of success where
 
 $$p = P(HEADS)$$ 
+
 $$x := \text{Starting Value}$$
+
 $$k := \text{Winning Value}$$
 
 **Theorem**: When the gambler starts with $ x$ with the stopping conditions of *loss* at $0$ and *win* at $k$, and the probability of HEADS is $p$, the probability of winning $f_{k}(x)$ is 
