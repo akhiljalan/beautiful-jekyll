@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gambler's Ruin and the Random Walk
-tags: [statistics, python, work-in-progress]
+tags: [statistics, python]
 ---
 # Introduction 
 
@@ -26,7 +26,7 @@ The sequence of random variables $(S_{n})_{n = 1}^{\infty}$ is a **simple symmet
 
 ### Gambler's Ruin 
 
-Next, let's define a special case of gambler's ruin. 
+Next, let's define a special case of [gambler's ruin](http://mathworld.wolfram.com/GamblersRuin.html). 
 
 **Game**: Suppose a gambler is playing a game of chance. He starts with $x$ for some $0 < x < k$. At each round, he flips a biased coin with $P(\text{HEADS}) = p$. If the coin is heads, he gains $1$. If it is tails, he loses $1$. The game continues until he loses all his money, ending up with $0$, or attains $k$. The former outcome is a *loss* and the latter is a *win*.
 
@@ -82,7 +82,7 @@ def empirical_success_estimator(num_runs, start_val, upper_limit, lower_limit = 
 
 I'll plot the empirical probability of a "successful walk" for $p \in [0.1, 0.2, ..., 0.9]$ and $x \in \{0, 1, ..., 10\}$ where $k = 10$.
 
-```pythonf
+```python
 plt.figure(figsize=(12, 8))
 for p in np.arange(0.1, 1, step=0.1):
     p_success_vals = []
@@ -99,9 +99,11 @@ plt.savefig('empirical_probability.png')
 
 ![Empirical Win Probability](../img/random-walks/empirical_probability.png)
 
+As you might have expected, this onion-like shape is too symmetric and clean to look coincidental. In particular, it seems symmetric about the purple diagonal line in the center, and the slopes seem to increase non-linearly for all $p$ except $p = 0.5$. What's going on here? 
+
 ## Theoretical Verification 
 
-Now, let's find the theoretical answer: What is the probability of success where
+This raises the question - What is the probability of success in our game, where 
 
 $$p = P(HEADS)$$ 
 
@@ -168,3 +170,5 @@ plt.savefig('theoretical_probability.png')
 ```
 
 ![Empirical Win Probability](../img/random-walks/theoretical_probability.png)
+
+As expected, this looks like a "smoothed out" version of the earlier plot of empirical probabilities. So we're done! 
