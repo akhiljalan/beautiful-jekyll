@@ -6,7 +6,9 @@ subtitle:
 
 Hi there! My name Akhil Jalan. 
 
-I'm a 3rd-year student at the University of California, Berkeley studying Applied Mathematics with a conentration in data science. I hope to one day become a working data scientist, using my knowledge of mathematics and statistics to effect large-scale change in the world. 
+I'm a 3rd-year student at the University of California, Berkeley studying Applied Mathematics with a conentration in data science. 
+
+This site is intended mainly to host blog posts and projects. If you found an error, please let me know! 
 
 <div style="text-align:center" markdown="1">
 
@@ -22,7 +24,7 @@ I'm a 3rd-year student at the University of California, Berkeley studying Applie
 * Podcasts, especially about politics and history 
 * Hiking
 * Music, especially Hip Hop and Electronic 
-
+<!-- 
 ### Brief Story of My Life
 
 I grew up in Southern California, where I spent a lot of time playing YuGiOh and re-reading the Harry Potter books (still a huge Potterhead). 
@@ -39,4 +41,4 @@ Here's a picture of me holding some debate trophies and looking quite satisfied,
 
 Having learned a bit about world events, I came to Cal in 2015 intending to major in Economics or Political Science. But during first semester, I ended up enjoying the math class I took (an introduction to linear algebra and differential equations) so much that I decided to study applied math instead. From there, my curiosity led me into classes in programming, algorithms, statistics, and machine learning. Now, here I am. 
 
-Besides learning a ton in my classes, I've made some great friends and memories in [Effective Altruists of Berkeley](https://www.facebook.com/effectivealtruismberkeley/), a student club about [effective altruism](https://www.effectivealtruism.org/). I've been President of EAB since January 2017.
+Besides learning a ton in my classes, I've made some great friends and memories in [Effective Altruists of Berkeley](https://www.facebook.com/effectivealtruismberkeley/), a student club about [effective altruism](https://www.effectivealtruism.org/). I've been President of EAB since January 2017. -->
