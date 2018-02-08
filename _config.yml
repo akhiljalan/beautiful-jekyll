@@ -24,6 +24,7 @@ description: Akhil Jalan's homepage
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
+  Projects: "projects"
   Resources:
     - Medium: https://medium.com/@akhiljalan
     # - Classes @Cal (WIP): "classes"
