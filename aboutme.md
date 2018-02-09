@@ -6,7 +6,7 @@ subtitle:
 
 Hi there! My name Akhil Jalan. 
 
-I'm a 3rd-year student at the University of California, Berkeley studying Applied Mathematics with a conentration in data science. 
+I'm a 3rd-year student at the University of California, Berkeley studying Applied Mathematics with a concentration in data science. 
 
 This site is intended mainly to host blog posts and projects. If you found an error, please let me know! 
 
