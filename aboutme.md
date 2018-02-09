@@ -6,9 +6,7 @@ subtitle:
 
 Hi there! My name Akhil Jalan. 
 
-I'm a 3rd-year student at the University of California, Berkeley studying Applied Mathematics with a concentration in data science. 
-
-This site is intended mainly to host blog posts and projects. If you found an error, please let me know! 
+I'm a 3rd-year student at the University of California, Berkeley studying Applied Mathematics with a concentration in data science. I'm interested in applying machine learing, optimization, and data analysis to solve socially important problems. You can view some of my projects [here](https://akhiljalan.github.io/projects/), or on my Github. 
 
 <div style="text-align:center" markdown="1">
 
@@ -24,21 +22,3 @@ This site is intended mainly to host blog posts and projects. If you found an er
 * Podcasts, especially about politics and history 
 * Hiking
 * Music, especially Hip Hop and Electronic 
-<!-- 
-### Brief Story of My Life
-
-I grew up in Southern California, where I spent a lot of time playing YuGiOh and re-reading the Harry Potter books (still a huge Potterhead). 
-
-From ages 12-18, I spent a lot time in competitive debate, which I consider a formative influence. Debate taught me to appreciate complexity, question everything, and speak articulately. 
-
-Here's a picture of me holding some debate trophies and looking quite satisfied, taken in 2011. 
-
-<div style="text-align:center" markdown="1">
-
-![Alt Text](img/misc-site-pictures/yung-akhil-trophies.jpg){:height="50%" width="50%"}
-
-</div>
-
-Having learned a bit about world events, I came to Cal in 2015 intending to major in Economics or Political Science. But during first semester, I ended up enjoying the math class I took (an introduction to linear algebra and differential equations) so much that I decided to study applied math instead. From there, my curiosity led me into classes in programming, algorithms, statistics, and machine learning. Now, here I am. 
-
-Besides learning a ton in my classes, I've made some great friends and memories in [Effective Altruists of Berkeley](https://www.facebook.com/effectivealtruismberkeley/), a student club about [effective altruism](https://www.effectivealtruism.org/). I've been President of EAB since January 2017. -->
