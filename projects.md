@@ -42,6 +42,10 @@ In addition to creating a visualization of this high-dimensional vector space us
 
 </div>
 
+Team: Solo
+
+Link: See the [Github repo](https://github.com/akhiljalan/politics-nerdfest). 
+
 This was for an [article](https://towardsdatascience.com/political-partisanship-a-look-at-the-data-e71946199586) in [Towards Data Science](https://towardsdatascience.com/). Using [Brookings’ Vital Statistics on Congress](https://www.brookings.edu/multi-chapter-report/vital-statistics-on-congress/), and in particular the subset of the data containing [Poole-Rosenthal DW-NOMINATE](https://voteview.com/) scores for partisan ideology in Congress, I examined data from Congressional party vote unity and ideological score differences from 1953 to 2015. 
 
 Using a two-sided t-test, I concluded that the two parties have diverged ideologically since 1953 - from a 0.4 score difference then to almost 0.8 now in both chambers of Congress. 
