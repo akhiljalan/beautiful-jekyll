@@ -20,6 +20,8 @@ In this project, my team and I sought to build a classifier to predict the succe
 
 This was my captsone project for a class in Fall 2017 (Statistics 159).
 
+---
+
 # Analysis of State of the Union Speeches
 
 <div style="text-align:center" markdown="1">
@@ -33,6 +35,8 @@ Team: Akhil Jalan, Yakub Akhmerov, Ken Zhong
 In this project, my team created a bag-of-words model and K-nearest-neighbors to analyze Presidential state of the union speeches. After forming all of the stemmed words across speeches as a "dictionary", each President was modeled as a vector whose entries were the number of times some word was used. 
 
 In addition to creating a visualization of this high-dimensional vector space using multidimensional scaling to project to 2 dimensions (credit to Yakub), built a K-nearest-neighbors classifier whose training set was some subset of all presidential speeches, and test set was other speeches. While this approach was fairly naive, we got an accuracy of 76% with $k = 1$. 
+
+---
 
 # Political Partisanship: A Look at the Data
 
