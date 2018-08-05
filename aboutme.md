@@ -8,7 +8,7 @@ I am a 4th-year undergraduate at the University of California, Berkeley studying
 
 Specifically, I am part of Professor Anant Sahai's research group on machine learning approaches to wireless communications. I am also working with Professor Gireeja Ranade's team on evaluating fairness metrics in the facility location problem. 
 
-Recently, I was on a team of 4 Berkeley students who won 2nd place at *The Data Open*, a data-science style hackathon hosted by Citadel Securities and Correlation One. 
+Recently, I was on a team of 4 Berkeley students who won 2nd place at *The Data Open*, a national data-science style hackathon hosted by Citadel Securities and Correlation One (Go Bears!). Our project predicted the effect of weather patterns on flight delays, using data from major US airlines from 2016-2018. 
 
 Earlier, I was a finalist in the Data for Good Competition hosted by UC Berkeley's Center for Technology, Society, and Policy. My team's project, *"Accountability in the Information Age: A Study of Data Transparency in Local Governments"*, evaluated the accessibility and reliability of governmental data for a variety of cities in California. See the [website](https://ctsp.berkeley.edu/data-for-good-projects/) for more details. 
 
