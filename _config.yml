@@ -25,9 +25,11 @@ description: Akhil Jalan's homepage
 navbar-links:
   About Me: "aboutme"
   Projects: "projects"
-  Resources:
-    - Medium: https://medium.com/@akhiljalan
-    # - Classes @Cal (WIP): "classes"
+  Medium: https://medium.com/@akhiljalan
+  # Classes @Cal (WIP): "classes"
+  # Resources:
+    # - Medium: 
+    # - 
   Contact: "contact"
   Resume: "files/Resume-Akhil-Jalan.pdf"
   #   - Github: "https://github.com/akhiljalan"
@@ -38,7 +40,7 @@ navbar-links:
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/misc-site-pictures/xmas-avatar.jpg"
+# avatar: "/img/misc-site-pictures/xmas-avatar.jpg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -178,7 +180,7 @@ exclude:
 
 # prose.io config
 prose:
-  rooturl: '_posts'
+  rooturl: 'aboutme' #used to be _posts
   media: 'img'
   ignore:
     - 404.html
@@ -234,4 +236,4 @@ plugins:
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
