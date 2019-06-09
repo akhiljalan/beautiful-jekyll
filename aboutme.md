@@ -3,7 +3,7 @@ layout: page
 title: About Me
 subtitle: 
 ---
-I am an incoming software engineer at WeWork, in the Research and Applied Sciences team. I am broadly interested in computer science and statistics,
+I am an incoming software engineer at WeWork, in the [Research and Applied Sciences team](https://research.wework.com/).
 
 In spring of 2019, I graduated from UC Berkeley with a BA in Applied Mathematics. During my time there I worked on various research projects in computer science and mathematics. 
 
