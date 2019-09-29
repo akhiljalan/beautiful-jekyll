@@ -30,11 +30,11 @@ Next, let's define a special case of [gambler's ruin](http://mathworld.wolfram.c
 
 **Game**: Suppose a gambler is playing a game of chance. He starts with $x$ for some $0 < x < k$. At each round, he flips a biased coin with $P(\text{HEADS}) = p$. If the coin is heads, he gains $1$. If it is tails, he loses $1$. The game continues until he loses all his money, ending up with $0$, or attains $k$. The former outcome is a *loss* and the latter is a *win*.
 
-Suppose that we start at 1, and at each step we go to +1 with probability $p$ and -1 with probability $1 - p$. What is the probability that we get to $k$? 
+**Question**: Suppose that we start at 1, and at each step we go to +1 with probability $p$ and -1 with probability $1 - p$. What is the probability that we get to $k$? 
 
-## Empirical Test
+## Gathering Data
 
-To motivate the ultimate derivation, I'll first write some scripts to calculate this probability empirically.
+If you can pull fully formed theorems and proofs out of a hat, I applaud you. I like to gather some simple data to formulate a guess. Le'ts write a simple script. 
 
 ```python
 import numpy as np 
@@ -80,7 +80,7 @@ def empirical_success_estimator(num_runs, start_val, upper_limit, lower_limit = 
     return num_success/num_runs
 ```
 
-I'll plot the empirical probability of a "successful walk" for $p \in [0.1, 0.2, ..., 0.9]$ and $x \in \{0, 1, ..., 10\}$ where $k = 10$.
+Next, let's plot the empirical probability of a "successful walk" for $p \in [0.1, 0.2, ..., 0.9]$ and $x \in \{0, 1, ..., 10\}$ where $k = 10$.
 
 ```python
 plt.figure(figsize=(12, 8))
@@ -111,13 +111,17 @@ $$x := \text{Starting Value}$$
 
 $$k := \text{Winning Value}$$
 
-**Theorem**: When the gambler starts with $ x$ with the stopping conditions of *loss* at $0$ and *win* at $k$, and the probability of HEADS is $p$, the probability of winning $f_{k}(x)$ is 
+Well, with motivation done, I think it's time for me to pull a theorem out of a hat. 
 
-$$f_{k}(x) = \frac{(\frac{1 - p}{p})^{x} - 1}{(\frac{1 - p}{p})^{k} - 1}$$
+**Theorem**: When the gambler starts with $x$ dollars, with the stopping conditions of *loss* at $0$ and *win* at $k$, and the probability of HEADS is $p$, the probability of winning $f_{k}(x)$ is 
 
-**Proof**: We know that $f_{k}(k) = 1$ and $f_{k}(0) = 0$
+$$f_{k}(x) = \begin{cases}
+\frac{(\frac{1 - p}{p})^{x} - 1}{(\frac{1 - p}{p})^{k} - 1} & p \neq 0.5 \\
+\frac{x}{k} & p = 0.5 \end{cases}$$
 
-If $0 < x < k$, then after 1 step the gambler has $x + 1$ with probability $p$ and $x - 1$ with probability $1 - p$. Therefore, $f_{k}(x) = pf_{k}(x + 1) + (1 - p)f_{k}(x-1)$. To solve, we can solve the characteristic equation $y = py^2 + (1-p)$. 
+**Proof**: We know that $f_{k}(k) = 1$ and $f_{k}(0) = 0$. We proceed in cases: 
+
+(i) $p \neq 0.5$. If $0 < x < k$, then after 1 step the gambler has $x + 1$ with probability $p$ and $x - 1$ with probability $1 - p$. Therefore, $f_{k}(x) = pf_{k}(x + 1) + (1 - p)f_{k}(x-1)$. To solve, we can solve the characteristic equation $y = py^2 + (1-p)$. 
 
 $$\begin{eqnarray} 
 y = py^2 + (1-p) \\ 
@@ -135,9 +139,13 @@ f_{k}(0) = a + b = 0
 \end{eqnarray}
 $$
 
-Solving this system gives the desired result of $f_{k}(x) = \frac{(\frac{1 - p}{p})^{x} - 1}{(\frac{1 - p}{p})^{k} - 1}$. 
+Solving this system gives the desired result of $f_{k}(x) = \frac{(\frac{1 - p}{p})^{x} - 1}{(\frac{1 - p}{p})^{k} - 1}$, when $p \neq 0.5$.  
+
+(ii) $p = 0.5$. In this simpler case, [first step analysis](http://www.maths.qmul.ac.uk/~ig/MAS338/FSA-example.pdf) will suffice. Notice that for $0 < x < k$, $f_{k}(x) = 0.5 f_{k}(x-1) + 0.5 f_k(x+1)$. Combining with $f_{k}(1) = 0.5 f_k(0) + 0.5 f_k(2) = 0.5 f_k(2)$ and $f_k(9) = 0.5 f_k(10) + 0.5 f_k(8) = 0.5 + 0.5 f_k(8)$ gives the desired result. 
 
 ### Plotting Theoretical Probability
+
+If we plot the theoretical probability of a win that's given by this theorem, we get what looks like a "smoothed out" version of the empirical estimate.
 
 ```python
 def fkx(start_val, upper_limit, p = 0.5):
@@ -171,4 +179,14 @@ plt.savefig('theoretical_probability.png')
 
 ![Empirical Win Probability](../img/random-walks/theoretical_probability.png)
 
-As expected, this looks like a "smoothed out" version of the earlier plot of empirical probabilities. So we're done! 
+## What's going on here? 
+
+With empirical and theoretical results in hand, let's ask again: what's going on here? 
+
+I think the first step analysis from the theorem proof sheds some light here. When $p = 0.5$, win probability scales linearly with starting position. The closer you start to a win or loss, the more likely you end up there. Nothing surprising. 
+
+But for a value of $p$ that is even slightly biased towards win or loss (that is, slightly different from $p = 0.5$) we get an exponential increase/decrease in overall win rate. First step analysis tells us that for $1 < x < k - 1$, that 
+
+$$f_k(x) = (1-p)^2 f_k(x - 2) + 2p(1-p) f_k(x) + p^2 f_k(x + 2)$$
+
+Of course, we can get similar equations for an arbitrary number of steps. The point is that as the exponents for the coefficents grow, the bias of the coin gets amplified. This phenomenon of "amplification of bias" is really an instance of the [ergodic theorem for Markov chains](http://www.math.uchicago.edu/~may/VIGRE/VIGRE2007/REUPapers/FINALFULL/Casarotto.pdf).
