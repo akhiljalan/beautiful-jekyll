@@ -26,12 +26,13 @@ navbar-links:
   About Me: "aboutme"
   #Projects: "projects"
   Research: "research"
+  CV: "files/akhil_cv.pdf"
   # Classes @Cal (WIP): "classes"
   # Resources:
     # - Medium: 
     # - 
   Contact: "contact"
-  Resume: "files/Resume-Akhil-Jalan.pdf"
+  #Resume: "files/Resume-Akhil-Jalan.pdf"
   #   - Github: "https://github.com/akhiljalan"
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
