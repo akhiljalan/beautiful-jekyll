@@ -9,7 +9,8 @@ $$\begin{eqnarray}
 \textrm{Graph } G \rightarrow \text{Reduced Laplacian Matrix } \Delta_G^\prime \\
 \rightarrow \text{Smith Normal Form } S \\
 \rightarrow \text{Diagonal entries } s_1, ..., s_{n-1} \\
-\rightarrow \text{Sandpile group } \bigoplus\limits_{i=1}^{n-1} \mathbb{Z}/s_i \mathbb{Z}$$
+\rightarrow \text{Sandpile group } \bigoplus\limits_{i=1}^{n-1} \mathbb{Z}/s_i \mathbb{Z}
+\end{eqnarray}$$
 
 Given that I finished this in May, why did it take me so long to upload it? Essentially, I was under the delusion that I would brush it up, fill out the missing proofs, fix up the typos...basically, keep working on it until it was perfect. This of course will never happen, so I decided to upload the darn thing already, warts and all. 
 
