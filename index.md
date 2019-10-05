@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Akhil Jalan
-subtitle: About Me
 ---
 Hello! This is my professional homepage. 
 
