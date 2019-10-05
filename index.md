@@ -5,6 +5,8 @@ subtitle: About Me
 ---
 Hello! This is my professional homepage. 
 
+![Alt Text](img/akhil-ogden.jpg)
+
 If you'd like to get in touch, email is the easiest way to reach me: *akhiljalan@berkeley.edu*
 
 I am currently a software engineer at WeWork, in the [Research and Applied Sciences team](https://research.wework.com/).
