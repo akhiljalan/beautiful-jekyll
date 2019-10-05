@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Beatiful Sandpiles
+title: Beautiful Sandpiles
 tags: [abelian sandpile]
 ---
 I finally got around to uploading my [bachelor's thesis on abelian sandpiles](files/akhil_thesis_sandpile_group.pdf), which I finished all the way back in May. In a nutshell, I tried to understand the sandpile group of certain interesting families of graphs, through some machinery called the Smith Normal Form of the graph Laplacian matrix. Every finite group, including the sandpile group of a finite undirected graph, is the direct sum of some finite cylic groups of the form $\mathbb{Z}/n \mathbb{Z}$. The values of $n$ for these cylic groups are called the invariant factors of the sandpile group (in fact, every finite abelian group can be characterized in this way), and the diagonal Smith Normal Form entries are precisely these invariant factors. 
