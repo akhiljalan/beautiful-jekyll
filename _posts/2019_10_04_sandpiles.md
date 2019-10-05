@@ -9,13 +9,13 @@ Given that I finished this in May, why did it take me so long to upload it? Esse
 
 While rereading it, I realized that my thesis does not do a good job of exciting the reader about sandpiles. In fact, it is rather dry, with no figures until the experimental results at the very end. However, sandpiles are visually fascinating and rich even in simple, computer-generated cases. So I decided to try to recreate the kinds of images that got me excited about sandpiles almost a year ago. Here's one. 
 
-![Alt Text](img/1000000_grains_400_sidelen_RdPu.png)
+![Alt Text](../img/1000000_grains_400_sidelen_RdPu.png)
 
 Here are some more images, which have the same data but a different color scheme. Which one is your favorite? 
 
-![Alt Text](img/1000000_grains_400_sidelen_YlGnBu.png)
+![Alt Text](../img/1000000_grains_400_sidelen_YlGnBu.png)
 
-![Alt Text](img/1000000_grains_400_sidelen_hsv.png)
+![Alt Text](../img/1000000_grains_400_sidelen_hsv.png)
 
 Okay, so what is this thing? This is, as you might guess, a sandpile. Specifically, it is the stabilization of the sandpile on $\mathbb{Z}^2$, with an initial configuration of $10^6$ grains at the origin and zero grains everywhere else. 
 
