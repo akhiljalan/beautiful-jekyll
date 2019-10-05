@@ -8,6 +8,8 @@ NOTE: I'm working on filling this page out. For a less detailed but more complet
 
 # Bachelor's Thesis: Structure of the Sandpile Group 
 
+![Alt Text](img/1000000_grains_400_sidelen_RdPu.png)
+
 **Advisor**: [Nikhil Srivastava](https://math.berkeley.edu/~nikhil/)
 
 **Link**: See the full PDF [here](https://akhiljalan.github.io/files/akhil_thesis_sandpile_group.pdf)
