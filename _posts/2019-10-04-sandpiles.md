@@ -5,7 +5,9 @@ tags: [abelian sandpile]
 ---
 I finally got around to uploading my [bachelor's thesis on abelian sandpiles](files/akhil_thesis_sandpile_group.pdf), which I finished all the way back in May. In a nutshell, I tried to understand the sandpile group of certain interesting families of graphs, through some machinery called the Smith Normal Form of the graph Laplacian matrix. Every finite abelian group, including the sandpile group of a finite undirected graph, is the direct sum of some finite cylic groups of the form $\mathbb{Z}/n \mathbb{Z}$. The values of $n$ for these cylic groups are called the invariant factors of the sandpile group, and they characterize the sandpile group (in fact, every finite abelian group), up to isomorphism. The diagonal entries of the Smith Normal Form, as it turns out, give exactly the invariant factors of the sandpile group. So we can reduce the study of the sandpile group to the study of this form of the reduced Laplacian matrix. To summarize, 
 
-$$\text{Graph } G \rightarrow \text{Reduced Laplacian Matrix } \tilde{\Delta_G} \rightarrow \text{Smith Normal Form } S \rightarrow \text{Diagonal entries } s_1, ..., s_{n-1} \rightarrow \text{Sandpile group} \mathbb{Z}/s_1 \mathbb{Z} \bigoplus \cdots \bigoplus \mathbb{Z}/s_{n-1} \mathbb{Z}$$
+$$\textrm{Graph } G \rightarrow \text{Reduced Laplacian Matrix } \Delta_G^\prime \rightarrow \text{Smith Normal Form } S \rightarrow \text{Diagonal entries } s_1, ..., s_{n-1}$$
+
+$$\text{Diagonal entries } s_1, ..., s_{n-1} \rightarrow \text{Sandpile group } \mathbb{Z}/s_1 \mathbb{Z} \bigoplus \cdots \bigoplus \mathbb{Z}/s_{n-1}\mathbb{Z}$$
 
 Given that I finished this in May, why did it take me so long to upload it? Essentially, I was under the delusion that I would brush it up, fill out the missing proofs, fix up the typos...basically, keep working on it until it was perfect. This of course will never happen, so I decided to upload the darn thing already, warts and all. 
 
