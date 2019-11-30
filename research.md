@@ -9,6 +9,7 @@ subtitle:
 # Bachelor's Thesis: Structure of the Sandpile Group 
 
 ![Alt Text](img/1000000_grains_400_sidelen_RdPu.png)
+*Visualization of the stabilization of a sandpile on the 400-by-400 integer grid, with an initial configuration of 1 million grains of sand placed at the origin. Each pixel is a vertex. Color indicates number of grains in the final configuration.*
 
 **Advisor**: [Nikhil Srivastava](https://math.berkeley.edu/~nikhil/)
 
@@ -17,6 +18,9 @@ subtitle:
 **Abstract**: The abelian sandpile model is a discrete dynamical system defined on a graph, in which grains of “sand” are placed on the vertices and move along edges. Despite its simple combinatorial description, the sandpile model has surprising connections to a variety of areas, including spectral graph theory, finite group theory, computational complexity, and more. I survey some of these connections through the lens of the sandpile group, a finite abelian group associated to a graph, whose elements can be identified with recurrent states of the sandpile model. After presenting various equivalent formulations of the sandpile group, I focus on a particular description of the sandpile group, as the cokernel of the graph Laplacian matrix. Under this description, it is (in principle) easy to compute the invariant factor decompositon of the sandpile group, by computing the Smith Normal Form of the reduced Laplacian matrix. Using this technique, I study the invariant factors of the sandpile groups for various families of graphs, especially expanders. I prove lower bounds on the number of trivial invariant factors for families of graphs, such as the hypercube and grid graphs. For more interesting graph families, such as two explicit constructions of expanders, I 	 formulate conjectures about their invariant factors on the base of computer experiments.
 
 # Equity in Facility Location
+
+![Alt Text](img/voronoi_facility_example.png)
+*An example of the assignment of users to hospitals in East Bay, when opening just 3 facilities.*
 
 **Advisors**: [Gireeja Ranade](https://people.eecs.berkeley.edu/~gireeja/), [Swati Gupta](https://swatigupta.tech)
 
@@ -29,6 +33,9 @@ In general, it is difficult to define fairness across demographic groups. There 
 Our work studies equity in facility location, and especiall approximately optimal solutions, from both a theoretical and applied perspective. In particular, I have led a case study on hospital placement in East Bay, California, motivated by the impending closure of the Alta Bates hospital in Berkeley, CA. We have found that while good approximately optimal solutions do exist in certain regimes, they are sensitive to changes in the problem setup. Moreover, it is difficult to obtain good theoretical bounds on approximation factors, which tend to degrade in the regime where equity is weighted very highly relative to other terms in the objective function.
 
 # Machine Learning in Communication and Control
+
+![Alt Text](img/witsenhausen_diagram.jpg)
+*A schematic of the control problem in Witsenhausen's Counterexample.*
 
 **Advisor**: [Anant Sahai](https://www2.eecs.berkeley.edu/Faculty/Homepages/sahai.html)
 
