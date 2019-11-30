@@ -9,7 +9,7 @@ subtitle:
 # Bachelor's Thesis: Structure of the Sandpile Group 
 
 ![Alt Text](img/1000000_grains_400_sidelen_RdPu.png)
-*Visualization of the stabilization of a sandpile on the 400-by-400 integer grid, with an initial configuration of 1 million grains of sand placed at the origin. Each pixel is a vertex. Color indicates number of grains in the final configuration.*
+*Figure: Visualization of the stabilization of a sandpile on the 400-by-400 integer grid, with an initial configuration of 1 million grains of sand placed at the origin. Each pixel is a vertex. Color indicates number of grains in the final configuration.*
 
 **Advisor**: [Nikhil Srivastava](https://math.berkeley.edu/~nikhil/)
 
@@ -20,7 +20,7 @@ subtitle:
 # Equity in Facility Location
 
 ![Alt Text](img/voronoi_facility_example.png)
-*An example of the assignment of users to hospitals in East Bay, when opening just 3 facilities.*
+*Figure: An example of the assignment of users to hospitals in East Bay, when opening just 3 facilities.*
 
 **Advisors**: [Gireeja Ranade](https://people.eecs.berkeley.edu/~gireeja/), [Swati Gupta](https://swatigupta.tech)
 
@@ -35,7 +35,8 @@ Our work studies equity in facility location, and especiall approximately optima
 # Machine Learning in Communication and Control
 
 ![Alt Text](img/witsenhausen_diagram.jpg)
-*A schematic of the control problem in Witsenhausen's Counterexample.*
+
+*Figure: A schematic of the control problem in Witsenhausen's Counterexample.*
 
 **Advisor**: [Anant Sahai](https://www2.eecs.berkeley.edu/Faculty/Homepages/sahai.html)
 
