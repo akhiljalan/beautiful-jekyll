@@ -4,8 +4,6 @@ title: Research
 subtitle: 
 ---
 
-**NOTE**: This page is under construction. For a less detailed but more complete listing of my research, please see my CV. 
-
 # Bachelor's Thesis: Structure of the Sandpile Group 
 
 ![Alt Text](img/1000000_grains_400_sidelen_RdPu.png)
